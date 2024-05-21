@@ -1,0 +1,738 @@
+*{
+    margin: 0;
+    padding:0;
+
+}
+body{
+    background-color:whitesmoke;
+}
+.navbar{
+    background-color:white;
+    color: white;
+    box-shadow: 0 1px 8px rgb(131, 129, 129);
+    display: flex;
+    text-align:center;
+    padding: 0px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    
+}
+.logo{
+    /* justify-content: left; */
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png); */
+    
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.search-box button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 100%;
+    border: none;
+    background-color:whitesmoke;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #f2f2f2;
+}
+
+.search-box button i {
+    color: #888;
+    font-size: 18px;
+    
+}
+.center {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 40%;
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 180px;
+    margin-right: 1px;
+   
+    
+}
+.center a {
+    align-items: center;
+    margin: 0px 10px 10px 0px;
+    padding-left:100px ;
+    color: black;
+    transition:  0.3s ease;
+    padding: 11px ;
+    padding-right: 0px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+} 
+.center a:hover {
+    background-color: #f2f2f2;
+    color: blue;
+}
+
+.rightside {
+    display:flex;
+    margin-left: 300px;
+    align-items: end;
+    justify-content:flex-start;
+    
+    
+  }
+  
+  
+  .rightside i:hover {
+    background-color: #f2f2f2;
+    color: #007bff;
+  }
+  
+  .rightside i {
+    font-size: 20px;
+    margin: 0px 20px 0px ;
+    color: black;
+    transition:  0.3s ease;
+    padding: 11px ;
+    padding-right: 1px;
+    border-radius: 10px;
+    
+  }
+  
+  .rightside img {
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+ .leftsidebar {
+    
+     position:fixed;
+    top: 5%;
+    left: 0%;
+    background-color: #f8f8f8;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    overflow: auto;
+     width: 20rem; 
+    height: 33rem; 
+    /* border: 2px solid cornflowerblue; */
+     margin: 2rem auto; 
+     /* font-family: monospace;  */
+    scrollbar-color:  darkgray;
+    scrollbar-width: thin;
+  
+  }
+  
+   
+  .leftsidebar nav ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .leftsidebar nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  .leftsidebar nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 5px;
+    display: block;
+    text-transform:capitalize;
+  
+  }
+  
+  .leftsidebar nav ul li a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .leftsidebar nav ul li a img {
+    width: 60px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit:cover;
+    margin-right: 10px;
+  }
+
+  .friend-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-user-group {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .memory-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-clock {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .saved-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-bookmark {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .game-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-gamepad {
+      margin-right: 28px;
+      margin-left: 6px;
+      height: 100%;
+    }
+  }
+  .calender-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-calendar-days {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .see-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-caret-up {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .fund-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-hand-holding-heart {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .chat-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-facebook-messenger {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .card-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-credit-card {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+  .page-link {
+    color: rgb(69, 69, 150);
+    text-decoration: none;
+    text-transform: capitalize;
+    
+
+    &:hover {
+      color: rgb(69, 69, 150);
+    }
+
+   .fa-newspaper {
+      margin-right: 34px;
+      margin-left: 10px;
+      height: 100%;
+    }
+  }
+
+
+/* ------------------------------------center------------------------------ */
+ 
+
+  
+  
+  
+
+.centerbar{
+    border:2px ;
+    width:700px ;
+    height: 700px;
+    padding:20px 0px ;
+    margin: auto;
+
+
+}
+.card-container {
+  display: flex;
+ justify-content:space-around;
+ margin-left: 20px;
+ margin-right: 20px;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  text-align: center;
+  /* padding: 20px; */
+  box-sizing: border-box;
+  /* margin-left: 50px;
+  margin-right: 20px; */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 3px;
+  
+}
+.card a{
+  text-decoration: none;
+  
+  
+}
+
+.card-1 {
+  background-image: url('https://images.pexels.com/photos/1620765/pexels-photo-1620765.jpeg?auto=compress&cs=tinysrgb&w=600');
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px ;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-1 p {
+  padding-top: 140px;
+  padding-right: 1px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: white;
+  
+}
+.card-2{
+background-image: url('https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=600');
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px ;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-2 p {
+  padding-top: 140px;
+  padding-right: 1px;
+  text-transform: capitalize;
+  color: white;
+  
+}
+.card-3{
+background-image: url('https://images.pexels.com/photos/2065203/pexels-photo-2065203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px ;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-3 p {
+  padding-top: 140px;
+  padding-right: 1px;
+  text-transform: capitalize;
+  color: white;
+  
+}
+.card-4{
+background-image: url('https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  border-top-left-radius: 10px;
+  border-top-right-radius:10px ;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-4 p {
+  padding-top: 140px;
+  padding-right: 1px;
+  text-transform: capitalize;
+  color: white;
+  
+}
+
+.card-4{
+  background-image: url('https://images.pexels.com/photos/3184433/pexels-photo-3184433.jpeg?auto=compress&cs=tinysrgb&w=600');
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px ;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .card-4 p {
+    padding-top: 140px;
+    padding-right: 1px;
+    text-transform: capitalize;
+    color: white;
+    
+  }
+  /* ===========================section twio============================= */
+ 
+  
+  .user-search-container {
+    
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+    width: 70%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    box-sizing: border-box;
+  }
+  
+  .user-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 20px;
+  }
+  
+  .my-search-box {
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px ; */
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 2px;
+    /* box-sizing: border-box; */
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  .my-search-input {
+    flex-grow: 1;
+    /* border: none; */
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px; 
+    /* box-sizing:border-box; */
+  }
+
+   /* .user-post-container{
+    margin-top: 20px;
+    /* display: flex; */
+    /* height: 350px;
+    width: 70%;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    box-sizing: border-box;
+
+  }  */ 
+  .user-post-container{
+    margin-top: 20px;
+    background-color:#fff;
+    height:350px;
+    width: 70%;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-left: 100px;
+    /* margin: auto; */
+    /* border: 1px solid; */
+    border-radius: 5px;
+    
+  }
+  .section1{
+    
+    height: 15%;
+    background-color: #fff;
+    /* border: 1px solid #333; */
+    
+    /* background-image : url(https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);  */
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; */
+     /* position: relative; 
+    display:flex;
+    justify-content:center; */
+    /* align-items:center; */
+    
+
+  }
+  .postprofile{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+   
+  }
+  .postuser{
+    font-style:oblique;
+    font-weight: bolder;
+    text-transform: capitalize;
+    padding-left: 10px;
+    margin-block-start: 100px;
+    text-decoration: none;
+    color:black;
+  
+  
+    &:hover {
+      color: rgb(69, 69, 150);
+      
+    }
+  }
+  .poststatus{
+    padding-left: 50px;
+    
+    margin-left: 10px;
+    color:gray;
+    font-size: 10px;
+  }
+   /* .sec2{
+    height: 85%;
+    width: 100px;
+    /* margin-bottom: auto; */
+  /* } */
+   
+  
+  .postpicture{
+   background-image : url(https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);  
+   background-repeat: no-repeat; 
+   background-size: 100% 100%; 
+   border-top-left-radius: 5px;  
+   border-top-right-radius: 5px; 
+   position: relative; 
+   display:flex; 
+   justify-content:center;  
+   align-items:center;  
+   /* border: 1px solid;  */
+   height: 230px;
+
+   margin-top:5px;
+   margin-left: 7px;
+    
+   padding-left:475px;
+   margin-right: 10px;   
+  } 
+  .postcenter{
+    
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height: 60%;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 100px;
+    gap: 150px;
+    margin-right: 100px;
+   
+    
+  }
+  .postcenter a {
+    align-items: center;
+    margin: 0px 10px 10px 0px;
+    padding-left:100px ;
+    color: black;
+    transition:  0.3s ease;
+    padding: 11px ;
+    padding-right: 0px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+} 
+.postcenter a:hover {
+    background-color: #f2f2f2;
+    color: blue;
+}
+.user-posts-container{
+  margin-top: 20px;
+  background-color:#fff;
+  height:355px;
+  width: 100%;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 10px;
+  margin-left: 0px;
+  /* margin: auto; */
+  /* border: 1px solid; */
+  border-radius: 5px;
+  
+}
+.rightsidebar{
+    /* border: 2px solid ; */
+    width: 300px;
+    height: 520px;
+    position: fixed;
+    padding:20px 10%;
+    top:9%;
+    right: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    
+}
+.rightsidebar nav h3{
+  color:gray;
+ 
+  text-transform: capitalize;
+  padding-left: 10px;
+  
+}
+.rightsidebar nav button{
+  color:gray;
+  margin-left: 100px;
+ 
+
+}
+
+.rightsidebar {
+  width: 250px;
+  float: right;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 0%; 
+}
+
+.right-bar {
+  width: 0%; 
+  background-color: #f2f2f2; 
+  padding: 0px; 
+}
+.cardprofile{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+ 
+}
+.carduser{
+  font-style:oblique;
+  font-weight: bolder;
+  text-transform: capitalize;
+  padding:0px 5px ;
+  margin-bottom: 100px;text-decoration: none;
+  color:black;
+
+
+  &:hover {
+    color: rgb(69, 69, 150);
+    
+  }
+}
+.onlinestatus{
+  padding-left: 90px;
+  
+  margin-left: 20px;
+  color:gray;
+  font-size: 10px;
+
+}
